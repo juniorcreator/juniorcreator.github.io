@@ -1,0 +1,331 @@
+/* Menu second*/
+ul.ul-up-uslugi a.a-our-specialists{
+    border:1px solid black;
+}
+nav ul.ul-up-uslugi a.uslugi{
+    text-decoration: none !important;
+    color: black !important;
+}
+/* container styles*/
+
+h3.head-ourspecialists-h3{
+    font-size: 26px;
+    color: #9c9580;
+    font-family: quizaproregular;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin-bottom: 45px;
+}
+.wrap-above-sliders{
+    background-color: #A09680;
+}
+.wrap-above-sliders p{
+    padding: 0;
+    font: normal 16px EuropeC;
+    color: #fff;
+    padding: 14px;
+    background: #A09680;
+    margin-bottom: 0;
+}
+.our-specialists + .row{
+    padding: 0 11px;
+}
+.header-wrap-our-specialists{
+    margin-bottom: 40px;
+}
+hr.akcia-news-line{
+    border-bottom: 1px solid #E7E7E6;
+}
+/* container styles*/
+
+/*block main thidr carousel */
+#our-specialists-parihmahers img:hover{
+    cursor: pointer;
+}
+#our-specialists-parihmahers p{
+    width: 120%;
+    text-align: left;
+    margin-top: 10px;
+    color: #4C4C4B;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: EuropeC;
+    border-bottom: 2px solid #E7E7E6;
+}
+#our-specialists-parihmahers img{
+    max-height: 350px;
+    height: 100%;
+}
+.main-page-h2{
+    font-size:26px;
+    font-weight: 400;
+    color: #948E7C;
+    margin-bottom: 45px;
+}
+#our-specialists-parihmahers .owl-nav .owl-prev{
+    position: absolute;
+    top: 150px;
+    left: -150px;
+    font-size: 41px;
+    color: #515151;
+    border-top: 2px solid #DBD8D5;
+    width: 121px;
+    background: none;
+}
+#our-specialists-parihmahers .owl-nav .owl-next{
+    position: absolute;
+    left: -103px;
+    top: 83px;
+    font-size: 41px;
+    color: #515151;
+    background: none;
+}
+@media(max-width: 961px){
+    #our-specialists-parihmahers .owl-nav .owl-next,#our-specialists-parihmahers .owl-nav .owl-prev{
+        display:none;
+    }
+}
+/*block main thidr carousel */
+/* second carousel*/
+#our-specialists-masters-of-manikura img:hover{
+    cursor: pointer;
+}
+#our-specialists-masters-of-manikura p{
+    width: 120%;
+    text-align: left;
+    margin-top: 10px;
+    color: #4C4C4B;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: EuropeC;
+    border-bottom: 2px solid #E7E7E6;
+}
+#our-specialists-masters-of-manikura img{
+    max-height: 350px;
+    height: 100%;
+}
+.main-page-h2{
+    font-size:26px;
+    font-weight: 400;
+    color: #948E7C;
+    margin-bottom: 45px;
+}
+#our-specialists-masters-of-manikura .owl-nav .owl-prev{
+    position: absolute;
+    top: 150px;
+    left: -150px;
+    font-size: 41px;
+    color: #515151;
+    border-top: 2px solid #DBD8D5;
+    width: 121px;
+    background: none;
+}
+#our-specialists-masters-of-manikura .owl-nav .owl-next{
+    position: absolute;
+    left: -103px;
+    top: 83px;
+    font-size: 41px;
+    color: #515151;
+    background: none;
+}
+@media(max-width: 961px){
+    #our-specialists-masters-of-manikura .owl-nav .owl-next,#our-specialists-masters-of-manikura .owl-nav .owl-prev{
+        display:none;
+    }
+}
+/* second carousel*/
+
+/* Слайдер косметологи*/
+#our-specialists-cosmetologs img:hover{
+    cursor: pointer;
+}
+#our-specialists-cosmetologs p{
+    width: 120%;
+    text-align: left;
+    margin-top: 10px;
+    color: #4C4C4B;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: EuropeC;
+    border-bottom: 2px solid #E7E7E6;
+}
+#our-specialists-cosmetologs img{
+    max-height: 350px;
+    height: 100%;
+}
+.main-page-h2{
+    font-size:26px;
+    font-weight: 400;
+    color: #948E7C;
+    margin-bottom: 45px;
+}
+#our-specialists-cosmetologs .owl-nav .owl-prev{
+    position: absolute;
+    top: 150px;
+    left: -150px;
+    font-size: 41px;
+    color: #515151;
+    border-top: 2px solid #DBD8D5;
+    width: 121px;
+    background: none;
+}
+#our-specialists-cosmetologs .owl-nav .owl-next{
+    position: absolute;
+    left: -103px;
+    top: 83px;
+    font-size: 41px;
+    color: #515151;
+    background: none;
+}
+@media(max-width: 961px){
+    #our-specialists-cosmetologs .owl-nav .owl-next,#our-specialists-cosmetologs .owl-nav .owl-prev{
+        display:none;
+    }
+}
+
+/* Слайдер косметологи*/
+
+
+/* Слайдер врачи косметологи*/
+#our-specialists-doctors-cosmetologs img:hover{
+    cursor: pointer;
+}
+#our-specialists-doctors-cosmetologs p{
+    width: 120%;
+    text-align: left;
+    margin-top: 10px;
+    color: #4C4C4B;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: EuropeC;
+    border-bottom: 2px solid #E7E7E6;
+}
+#our-specialists-doctors-cosmetologs img{
+    max-height: 350px;
+    height: 100%;
+}
+.main-page-h2{
+    font-size:26px;
+    font-weight: 400;
+    color: #948E7C;
+    margin-bottom: 45px;
+}
+#our-specialists-doctors-cosmetologs .owl-nav .owl-prev{
+    position: absolute;
+    top: 150px;
+    left: -150px;
+    font-size: 41px;
+    color: #515151;
+    border-top: 2px solid #DBD8D5;
+    width: 121px;
+    background: none;
+}
+#our-specialists-doctors-cosmetologs .owl-nav .owl-next{
+    position: absolute;
+    left: -103px;
+    top: 83px;
+    font-size: 41px;
+    color: #515151;
+    background: none;
+}
+@media(max-width: 961px){
+    #our-specialists-doctors-cosmetologs .owl-nav .owl-next,#our-specialists-doctors-cosmetologs .owl-nav .owl-prev{
+        display:none;
+    }
+}
+
+
+/* Слайдер врачи косметологи*/
+
+ /*Стили для формы */
+/* Форма на сторінкі Отзиви*/
+div.wrapper-comments-form{
+    max-width: 800px;
+    width: 100%;
+    margin:0 auto;
+}
+select.name-of-salon{
+    max-width: 300px;
+    width: 100%;
+    height: 30px;
+    appearance:none;
+    -webkit-appearance:none;
+    background: url(../img/select.png) no-repeat 100%;
+    height: 42px;
+    padding: 0 10px;
+}
+span.span-name-comments{
+    display: inline-block;
+    max-width: 173px;
+    width: 100%;
+    text-align: right;
+    margin-right: 15px;
+    color: #9c9580;
+    vertical-align: top;;
+    font-family: Quiza-Regular;
+    text-transform: uppercase;
+    padding-top: 10px;
+    font-size: 16px;
+}
+input.salon-in-comments{
+    max-width: 600px;
+    width: 100%;
+    height: 42px;
+    padding: 0 10px;
+}
+.textarea-in-comments{
+    max-width: 600px;
+    width: 100%;
+}
+.wrapper-comments-form {
+    text-align: left;
+}
+.submit-in-comments{
+    float: right;
+    width: auto;
+    background: #A09680;
+    color: #fff;
+    font-size: 18px;
+    padding: 14px 65px;
+    min-width: 0;
+    text-transform: uppercase;
+    font: 18px EuropeC;
+    margin-bottom: 25px;
+    cursor: pointer;
+    border: 1px solid #D1CBC1;
+    display: inline-block;
+    margin-right: 8px;
+}
+.text-of-text-area{
+    vertical-align: top;
+}
+.for-text-and-button{
+    overflow: auto;
+    text-align: center;
+}
+@media(max-width: 991px){
+    span.span-name-comments{
+        display: block;
+        text-align: left;
+    }
+    div.for-text-and-button{
+        text-align: left;
+        max-width: 600px;
+    }
+    .submit-in-comments{
+        margin-right: 0;
+    }
+}
+@media(max-width: 553px){
+    
+  div.for-text-and-button{
+    max-width: 493px;
+    margin:0 auto;
+    text-align: center;
+  }
+  .submit-in-comments{
+    float: none;
+  }
+
+}
+ /*Стили для формы */
