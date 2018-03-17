@@ -1,0 +1,515 @@
+
+@import "_fonts.scss";
+@import "_variables.scss";
+@import "_reset.scss";
+//END Import
+//global
+body{
+	font-family: $PT-regular;
+	background-color: $bgColor;
+}
+//end global
+.headerNews h1{
+	text-transform: uppercase;
+	color: #B11116;
+	font-size: 91px;
+	font-family: $PT-bold;
+	padding-bottom: 58px;
+	background: rgba(248, 248, 248, 0.8);
+}
+header{
+	background: url('../img/headercar.gif') no-repeat 0 0;
+	
+}
+
+.logoText p{
+	font-size: 33px;
+	color: #000000;	
+}
+.topmenuAndroid{
+	margin-top: 26px;
+	margin-bottom: 21px;
+	
+}
+.topmenuAndroid nav{
+	text-align: right;
+}
+.topmenuAndroid ul{
+	display: inline-block;
+	margin-right: 22px;
+}
+.topmenuAndroid ul li{
+	float: left;
+	margin-right: 16px;
+	a{
+		display: inline-block;
+		font-size: 29px;
+		color: $menuHeaderColor;
+		text-transform: uppercase;
+		transition:all 0.3s;
+		&:hover{
+			text-decoration: none;
+			background-color: #AF0917;
+			color: #fff;
+			
+		}
+	}
+}
+.topmenuAndroid ul li .activeLink{
+	background-color: #AF0917;
+	color: #fff;
+}
+.topmenuAndroid nav ul li> a:hover{
+	transform: scale(1.1);
+	background-color: #AF0917;
+	color: #fff;
+}
+.topmenuAndroid ul li:last-child{
+	margin-right: 0;
+}
+.liDropLanguage{
+	margin-left: 30px;
+	position: relative;
+	i{
+		position: relative;
+	    top: -8px;
+	    left: -7px;
+	    color: grey;
+	}
+}
+.dropLanguage{
+	font-size: 29px;
+	color: $menuHeaderColor;
+	text-transform: uppercase;
+	border: none;
+	background-color: transparent;
+	&:hover{
+		color: #000;
+	}
+	&:focus{
+		outline: none;
+	}
+}
+
+
+.dropdown{
+	margin-left: 45px;
+	font-size: 29px;
+	color: $menuHeaderColor;
+	text-transform: uppercase;
+	i{
+		position: absolute;
+		top: -8px;
+    	right: -20px;	
+	}
+}
+.dropbtn{
+	position: relative;
+	cursor: pointer;
+	&:hover{
+		color: #000;
+	}
+	
+}
+.dropdownСontent{
+	background-color: white;
+	position: absolute;
+	display: none;
+	left: 0;
+	a{
+		font-size: 14px;
+	}
+	a:hover{
+		cursor: pointer;
+		display: block;
+	}
+}
+.shown {display:block;}
+.android{
+	text-align: right;
+}
+.menuLogo{
+	   padding-bottom: 28px;
+	   background: rgba(248, 248, 248, 0.8);
+}
+//android
+
+//android
+.search{
+	background: rgba(248,248,248,0.5);
+	padding: 28px 0;
+	button{
+		display: inline-block;
+		margin-left: 26px;
+		border:none;
+		background: transparent;
+		i{
+			font-size: 33px;
+		}
+		&:focus{
+			outline: none;
+		}
+	}
+	input{
+		width: 95%;
+		padding: 20px 10px;
+		font-size: 25px;
+		border: none;
+		background-color: #fff;
+		opacity: 0.6;
+		color: #9F9F9F;
+		box-shadow: 0 0 11px 0px black;
+		&:focus{
+			outline: none;
+		}
+	}	
+}
+.search input::placeholder{
+	text-align: right;
+}
+.headerThreeBlocks{
+	padding-bottom: 39px;
+	background: rgba(248,248,248,0.7);
+}
+.threeBlocks{
+	background-color: #fff;
+	box-shadow: 0 0 7px grey;
+	padding: 32px;
+	input{
+		font-size: 33px;
+		width: 100%;
+		display: block;
+		margin-bottom: 39px;
+		padding: 5.5px 10px;
+	}
+	h3{
+		margin-bottom: 27px;
+		font-size: 35px;
+	}
+	select{
+		font-size: 33px;
+		margin-bottom: 39px;
+		display: block;
+		width: 100%;
+   		appearance: none;
+		background:transparent;
+		padding: 0px 36px 0 15px;
+    	height: 57px;
+    	background: url('../img/select.png') no-repeat 100% 0;
+	}
+	button{
+		width: 100%;
+		border:1px solid grey;
+		padding: 13px;
+		max-width: 104px;
+		width: 100%;
+		text-align: center;
+		text-transform: uppercase;
+		background-color: #D8D9DA;
+		color: #5b5b5b;
+		&:hover{
+			background-color: #A80020;
+			color: #F9F4F4;
+		}
+	}
+}
+.threeBlocks a{
+	display: inline-block;
+    max-width: 103px;
+    width: 100%;
+}
+.bgHeader{
+	background:rgba(252,252,252,0.0);
+}
+.threeBlocks:hover{
+    box-shadow: 0 0 6px #AF0917;
+    h3{
+    	color: #AF0917;
+    }
+}
+//end header
+//slider
+.owl-theme .owl-nav.disabled + .owl-dots {
+    text-align: right;
+    margin-top: 0px;
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    right: 58px;
+}
+.owl-theme .owl-dots .owl-dot span{
+	width: 25px;
+    height: 25px;
+    margin: 5px 1px;
+    background: #000000;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity 200ms ease;
+    border-radius: 0; 
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+	  background: #B00918;
+}
+.slider{
+	margin-bottom: 17px;
+}
+.sliderContent{
+	position: relative;
+	h3{
+		position: absolute;
+		right:5px;
+		bottom:92px;
+		color: #0A0908;
+		font-size: 35px;
+		font-weight: bold;
+		padding: 13px 25px;
+		background: rgba(255,255,255,0.5);
+	}
+}
+//end slider
+//off line catalog
+.offlineCatalog{
+	padding: 20px 0;
+	background-color: #AF0917;
+	margin-bottom: 60px;
+}
+.mainOfflineCatalog{
+	padding: 0 0 15px 0;
+	a:hover{
+		text-decoration: none;
+	}
+	h1{
+		
+	    vertical-align: middle;
+	    color: #FFF;
+	    font-weight: bold;
+	    text-transform: uppercase;
+	    font-size: 80px;
+	    text-align: center;
+	    line-height: 122px;
+	    position: relative;
+	    .leftPhone{
+	    	max-width: 351px;
+		    position: absolute;
+		    left: -7%;
+		    top: -60px;
+		    z-index: 2;
+	    }
+
+		span{
+			font-weight: normal;
+		}
+		img{
+			display: inline-block;
+			float: right;
+		}
+	}
+}
+//end offline catalog
+//news
+.h1Headers{
+	text-transform: uppercase;
+	color: #000;
+	font-size: 53px;
+	font-family: $PT-regular;
+	margin-bottom: 55px;
+}
+.newsInner{
+	max-width: 768px;
+	img{
+		max-width: 385px;
+	}
+	&:hover{
+		box-shadow: 0 0 19px black;
+		transition:all 0.5s;
+	}
+}
+.newsText{
+	padding: 18px;
+	h3{
+		color: #000;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+		font-size: 26px;
+		font-weight: bold;
+	}
+	p{
+		font-size: 26px;
+	}
+}
+.news{
+	margin-bottom: 25px;
+	display: flex;
+	flex-direction:row;
+	 flex-flow: wrap;
+	 justify-content: space-between;
+	.newsInner{
+		display: flex;
+		margin-bottom: 35px;
+	}
+}
+//end news
+////////////////video bg
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+.blockVideo{
+	margin: 0 auto;
+	overflow: hidden;
+    height: 739px;
+    max-width: 100%;
+    position: relative;
+	a:hover{
+		text-decoration: none;
+	}
+}
+.content{
+	position: absolute;
+	bottom:136px;
+	background: rgba(247,247,247,0.6);
+	padding: 35px 0 26px 0;
+	h1{
+		text-indent: 156px;
+		font-size: 100px;
+		color: #000;
+		span{
+			color: #af0917;
+		}
+	}
+
+}
+///////////////end video bg
+
+//autonews
+.autoNews{
+	margin-bottom: 15px;
+	background-color: white;
+    padding: 8px 100px 10px 20px;
+    box-shadow: 0 0 7px black;
+	div{
+	min-height: 75px;
+	padding: 0 0 0 82px;
+	background: url('../img/autonewsBg.png') no-repeat 0 5px;
+	p{
+		font-size: 40px;
+		color: #000;
+	}
+	}
+	}
+.autoNews:hover{
+	    box-shadow: 0px 0px 16px 0px black;
+	    transition:all 0.4s;
+	    cursor:pointer;
+}
+.wrapAutonews{
+	padding-bottom: 57px;
+}
+.autonewsBG{
+	padding-top: 57px;
+	background-color: #F7F7F7;
+}
+//autonews
+//footer
+footer{
+	background-color: #1B1B1B;
+}
+.copyrights{
+	background-color: #000000;
+	padding: 8px 0 8px 0;
+	p{
+		color: #6e6d6d;
+		font-size: 26px;
+	}
+}
+.adress,.contacts,.FotMobApps{
+	color: #FFF;
+	font-size: 42px;
+}
+.adress{
+	padding-left: 63px;
+	h1{
+		font-weight: bold;
+		margin-bottom: 15px;
+	}
+	p{
+		margin-bottom: 15px;
+		
+	}
+}
+.adress .local{
+position: relative;
+img{
+	position: absolute;
+	left: -67px;
+}
+}
+.topFooter{
+	padding: 39px 0 25px 0px;
+}
+
+.contacts{
+	padding-left: 70px;
+	p{
+		margin-bottom: 15px;
+		i{
+			display: inline-block;
+			margin-right: 15px;
+		}
+	span{
+		display: inline-block;
+		margin-right: 11px;
+	}
+	}	
+}
+.FotMobApps{
+
+	text-align: right;
+	i{
+	display: inline-block;
+    margin-right: 23px;
+    font-size: 100px;
+	}
+	p{
+	display: flex;
+    align-items: center;
+    flex-flow:wrap;
+	}
+	a{
+		display: inline-block;
+		color: #FFFFFF;
+	}
+	a:hover{
+		text-decoration: none;
+		color: #FFFFFF;
+	}
+
+}
+//footer
