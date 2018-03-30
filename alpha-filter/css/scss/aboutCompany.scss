@@ -1,0 +1,96 @@
+@import "style.scss";
+html{overflow-x: hidden;}
+.imgAbout{
+	float: left;
+	margin-right: 20px;
+}
+.wrapHeaderPageAboutCompany{
+	margin-bottom: 44px;
+	background: rgba(252, 252, 252, 0.8);
+}
+.topmenuAndroid ul li .activeLink{
+	background-color: #AF0917;
+	color: #fff;
+}
+.wrapWhyWe{
+	margin-bottom: 68px;
+}
+.textAbout{
+	h3{
+		color: #000;
+		font-size: 46px;
+		font-family: $PT-bold;
+		margin-bottom: 34px;
+	}
+	p{
+		font-size: 23px;
+		font-family: $PT-regular;
+		color: #000;
+		margin-bottom: 23px;
+		font-family: $PT-bold;
+		line-height: 23px;
+	}
+}
+.imgInnerWhyWe{
+	
+	img{
+		max-width: 508px;
+		width: 100%;
+	}
+}
+.wparImgFigure{
+	position: relative;
+	display: inline-block;
+}
+.wparImgFigure figcaption{
+	position: absolute;
+	padding: 20px 30px;
+	background:rgba(255,255,255,0.7);
+	bottom:20px;
+	left:0;
+	right:0;
+
+}
+.wparImgFigure h3{
+	font-size: 60px;
+	color: #b11116;
+	font-family: $PT-bold;
+}
+.wparImgFigure p{
+	font-size: 40px;
+	color: #000;
+	margin-top: 35px;
+}
+.whyWeParagraph,.ourGetsP,.ourHistoryP{display: none;}
+.wparImgFigure:hover{
+	-webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(100%);
+  filter: gray; /* IE 6-9 */
+  transition:all 0.3s;
+}
+@media(max-width:1400px){
+	.wparImgFigure p {
+		font-size: 30px;
+		margin-top: 15px;
+	}
+	.wparImgFigure h3{font-size: 35px;}
+	}//end 1199px
+@media(max-width:1199px){
+	.wparImgFigure figcaption{
+		padding: 10px 20px;
+	}
+	.wparImgFigure h3{font-size: 20px;}
+	.wparImgFigure p{font-size: 16px; margin-top: 6px;}
+}//end 1199px
+@media(max-width:991px){
+	.imgInnerWhyWe,.imgInnerWhyWe,.imgInnerWhyWe{
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.textAbout p{font-size: 19px;}
+	.textAbout h3{font-size: 40px;}
+}//end 991px
+@media(max-width:560px){}//end 560px
