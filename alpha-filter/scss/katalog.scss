@@ -1,0 +1,12 @@
+@import "style.scss";
+html{overflow-x: hidden;}
+.headerNews h1{
+	background-color: transparent;
+}
+
+.topmenuAndroid ul li .activeLink{
+	background-color: #AF0917;
+	color: #fff;
+}
+@media(max-width: 991px){
+}
