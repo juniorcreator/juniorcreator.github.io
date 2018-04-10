@@ -3,8 +3,8 @@
 	padding-left: 38px;
     border-left: 1px solid black;
 }
+.headerNews h1{background-color: transparent;}
 .wrapHeaderPageNews{
-	background: rgba(252, 252, 252, 0.8);
 }
 .topmenuAndroid ul li .activeLink{
 	background-color: #AF0917;
@@ -96,6 +96,28 @@ p.preHeader{
 .verticalCarousel{
 	margin: 0;
 }
-
-
 //END left block
+@media(max-width: 1400px){
+	.headersPageOfNews h3{font-size: 46px;}
+	p.preHeader{font-size: 30px;}
+	.newsSliderWrap p{font-size: 20px;}
+
+}//end media
+@media(max-width: 1199px){
+	.headersPageOfNews h3{
+		font-size: 30px;
+		line-height: 30px;
+	}
+	p.preHeader{margin-bottom: 10px;}
+}//end media
+@media(max-width: 991px){
+	.imgPageNews{
+		text-align: center;
+	}
+	.owl-carousel .owl-item img{display: inline-block;}
+}//end media
+@media(max-width: 769px){
+	#olwPageOfNews .owl-prev, #olwPageOfNews .owl-next{
+		font-size: 17px;
+	}
+}//end media

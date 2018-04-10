@@ -1,4 +1,6 @@
 @import "style.scss";
+html{overflow-x: hidden;}
+.headerNews h1{background-color: transparent;}
 .newsHeaderBlocks{
 	box-shadow: 0 0 10px #AAB4BD;
 	border: 1px solid black;
@@ -39,7 +41,6 @@
 }
 .wrapHeaderThreeBlocks{
 	padding-bottom: 100px;
-	background: rgba(252, 252, 252, 0.7);
 }
 ////news Content
 .newsImg img{
@@ -118,4 +119,61 @@
 	background-color: #363636;
 	color: #FFF;
 }
+.linkWrapNews:hover{text-decoration: none;}
 //end pagination
+@media(max-width: 1400px){
+	.newsHeaderBlocks div{
+
+	 h3{
+		margin-bottom: 10px;
+		font-size: 25px;
+		line-height: 25px;
+	}
+	p{
+		font-size: 16px;
+		line-height: 16px;
+	}
+	}
+}//end
+@media(max-width: 1199px){
+	.newsHeaderBlocks div{
+		padding: 10px;
+		h3{font-size: 20px; line-height: 20px;}
+		
+	}
+}//end
+@media(max-width: 991px){
+	.newsHeaderBlocks div{padding: 15px;}
+	.newsHeaderBlocks{margin-bottom: 15px;}
+	.pagination a{
+		margin-right: 10px;
+		font-size: 18px;
+		padding: 15px 23px;
+	}
+	.wrapePagination{margin-bottom: 40px;}
+	.newsContentWrap{margin-bottom: 0;}
+}//end
+@media(max-width: 768px){
+	.newsContent h3{
+		font-size: 30px;
+		margin-bottom: 12px;
+	}
+	.dateTime{
+		font-size: 16px;
+		margin-bottom: 10px;
+	}
+	.newsParagraphContent{font-size: 20px;}
+	.rowNewsContent{margin-bottom: 25px;}
+	.pagination a{
+		font-size: 15px;
+		padding: 4px 9px;
+		margin-right: 5px;
+	}
+
+}//end
+@media(max-width: 400px){
+	.pagination a{
+		font-size: 12px;
+		padding: 4px 7px;
+	}
+}

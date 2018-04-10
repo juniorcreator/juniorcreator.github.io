@@ -4,27 +4,53 @@
 @import "_reset.scss";
 //END Import
 //global
+html{overflow-x: hidden;}
 body{
 	font-family: $PT-regular;
-	background-color: $bgColor;
+	background-color: #fff;
+	img{
+		max-width: 100%;
+	}
 }
+.headerSection{padding: 0 2%;}
+.searchSection,.sectionThreeBlocks,
+.sectionSlider,.headingSection,.wrapDescriptionSection,
+.contentSection{padding: 0 5%;}
 //end global
+main{
+	padding: 0 2%;
+	max-width: 1920px;
+	margin: 0 auto;
+}
+/* .headerSection{background:rgba(255,255,255,0.7);} */
 .headerNews h1{
 	text-transform: uppercase;
 	color: #B11116;
 	font-size: 91px;
 	font-family: $PT-bold;
 	padding-bottom: 58px;
-	background: rgba(248, 248, 248, 0.8);
+}
+.headerContainer{
+	max-width: 1760px;
+}
+.headerSection{
+	background: rgba(255,255,255,0.9);
+}
+.searchSection{
+	background: rgba(255,255,255,0.7);
 }
 header{
+	max-width: 1920px;
+	margin: 0 auto;
 	background: url('../img/headercar.gif') no-repeat 0 0;
 	
 }
 
 .logoText p{
-	font-size: 33px;
-	color: #000000;	
+	padding-left: 5px;
+	font-size: 1.7vmax;
+	color: #000000;
+	min-width: 700px;	
 }
 .topmenuAndroid{
 	margin-top: 26px;
@@ -36,14 +62,14 @@ header{
 }
 .topmenuAndroid ul{
 	display: inline-block;
-	margin-right: 22px;
+	margin-right: 23px;
 }
 .topmenuAndroid ul li{
 	float: left;
 	margin-right: 16px;
 	a{
 		display: inline-block;
-		font-size: 29px;
+		font-size: 28px;
 		color: $menuHeaderColor;
 		text-transform: uppercase;
 		transition:all 0.3s;
@@ -55,14 +81,46 @@ header{
 		}
 	}
 }
+//menu mobile
+.containerMenu {
+    display: none;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
+///end menu mobile
+
 .topmenuAndroid ul li .activeLink{
 	background-color: #AF0917;
 	color: #fff;
+	padding: 0 10px;
 }
 .topmenuAndroid nav ul li> a:hover{
 	transform: scale(1.1);
 	background-color: #AF0917;
 	color: #fff;
+	padding: 0 10px;
 }
 .topmenuAndroid ul li:last-child{
 	margin-right: 0;
@@ -94,7 +152,7 @@ header{
 
 .dropdown{
 	margin-left: 45px;
-	font-size: 29px;
+	font-size: 28px;
 	color: $menuHeaderColor;
 	text-transform: uppercase;
 	i{
@@ -130,13 +188,11 @@ header{
 }
 .menuLogo{
 	   padding-bottom: 28px;
-	   background: rgba(248, 248, 248, 0.8);
 }
 //android
 
 //android
 .search{
-	background: rgba(248,248,248,0.5);
 	padding: 28px 0;
 	button{
 		display: inline-block;
@@ -151,14 +207,14 @@ header{
 		}
 	}
 	input{
-		width: 95%;
-		padding: 20px 10px;
-		font-size: 25px;
-		border: none;
 		background-color: #fff;
-		opacity: 0.6;
+		width: 94%;
+		padding: 15px 10px;
+		font-size: 25px;
+		border: 1px solid black;
+		/* background: transparent; */
 		color: #9F9F9F;
-		box-shadow: 0 0 11px 0px black;
+		box-shadow: 0 0 22px 1px #C4C4C4;
 		&:focus{
 			outline: none;
 		}
@@ -169,18 +225,22 @@ header{
 }
 .headerThreeBlocks{
 	padding-bottom: 39px;
-	background: rgba(248,248,248,0.7);
+}
+.sectionThreeBlocks{
+	background: rgba(255,255,255,0.7);
 }
 .threeBlocks{
-	background-color: #fff;
-	box-shadow: 0 0 7px grey;
+	background: rgba(255,255,255,0.5);
+    box-shadow: 0 0 30px -2px #C4C4C4;
 	padding: 32px;
 	input{
+		border: 1px solid #777777;
 		font-size: 33px;
 		width: 100%;
 		display: block;
 		margin-bottom: 39px;
-		padding: 5.5px 10px;
+		padding: 0 10px;
+		height: 50px;
 	}
 	h3{
 		margin-bottom: 27px;
@@ -194,10 +254,13 @@ header{
    		appearance: none;
 		background:transparent;
 		padding: 0px 36px 0 15px;
-    	height: 57px;
+    	height: 50px;
     	background: url('../img/select.png') no-repeat 100% 0;
+    	background-color: #fff;
+    	border: 1px solid #777777;
 	}
 	button{
+		font-size: 20px;
 		width: 100%;
 		border:1px solid grey;
 		padding: 13px;
@@ -218,17 +281,42 @@ header{
     max-width: 103px;
     width: 100%;
 }
-.bgHeader{
-	background:rgba(252,252,252,0.0);
+.noBoxShadow{background-color: transparent;}
+.carBg{
+	background: url(../img/newCar.jpg) no-repeat;
+    background-position: 100% 36px;
+    background-color: white;
+    background-size: 219px;
 }
+.surcleBg{
+	background: url('../img/222222.png') no-repeat;
+	background-position: 100% 64px;
+    background-size: 152px;
+}
+.lineBg{
+	background: url('../img/333333.png') no-repeat;
+	background-position: 100% 49px;
+    background-size: 171px;
+}
+.lineBg,.surcleBg{background-color: #fff;}
+
+/* .bgHeader{
+	background:rgba(252,252,252,0.0);
+} */
 .threeBlocks:hover{
-    box-shadow: 0 0 6px #AF0917;
+    box-shadow: 0px 0px 18px -6px #AF0917;
     h3{
     	color: #AF0917;
     }
 }
 //end header
 //slider
+#mainCarousel{
+    box-shadow: 0 0 37px 1px #C4C4C4;
+}
+.sectionSlider{
+	background: rgba(255,255,255,0.72);
+}
 .owl-theme .owl-nav.disabled + .owl-dots {
     text-align: right;
     margin-top: 0px;
@@ -252,6 +340,8 @@ header{
 }
 .slider{
 	margin-bottom: 17px;
+	max-width: 1920px;
+	margin: 0 auto;
 }
 .sliderContent{
 	position: relative;
@@ -260,7 +350,7 @@ header{
 		right:5px;
 		bottom:92px;
 		color: #0A0908;
-		font-size: 35px;
+		font-size: 50px;
 		font-weight: bold;
 		padding: 13px 25px;
 		background: rgba(255,255,255,0.5);
@@ -268,10 +358,22 @@ header{
 }
 //end slider
 //off line catalog
+.spanAndroid{
+	position: absolute;
+    right: 0;
+    top: 6px;
+    i{
+    	font-size: 120px;
+    }
+}
+.sectionOffLineKatalog,.sectionVideo,.sectionFooter{
+	max-width: 1920px;
+	margin: 0 auto;	
+}
 .offlineCatalog{
-	padding: 20px 0;
+	margin-top: 20px;
+	padding: 0 3% 0 3%;
 	background-color: #AF0917;
-	margin-bottom: 60px;
 }
 .mainOfflineCatalog{
 	padding: 0 0 15px 0;
@@ -279,8 +381,8 @@ header{
 		text-decoration: none;
 	}
 	h1{
-		
-	    vertical-align: middle;
+		font-family: $PT-bold;
+		padding: 0 176px;
 	    color: #FFF;
 	    font-weight: bold;
 	    text-transform: uppercase;
@@ -291,19 +393,20 @@ header{
 	    .leftPhone{
 	    	max-width: 351px;
 		    position: absolute;
-		    left: -7%;
+		    left: -6%;
 		    top: -60px;
 		    z-index: 2;
 	    }
-
 		span{
 			font-weight: normal;
+			font-family: $PT-regular;
 		}
-		img{
-			display: inline-block;
-			float: right;
 		}
 	}
+.mainOfflineCatalog h1 .rightAndroid{
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 //end offline catalog
 //news
@@ -320,11 +423,16 @@ header{
 		max-width: 385px;
 	}
 	&:hover{
-		box-shadow: 0 0 19px black;
+		box-shadow: 0 0 30px -2px #C4C4C4;
 		transition:all 0.5s;
 	}
 }
+.mainNews{
+	padding-top: 60px;
+	background-color: #F7F7F7;
+}
 .newsText{
+	background-color: #fff;
 	padding: 18px;
 	h3{
 		color: #000;
@@ -344,6 +452,7 @@ header{
 	 flex-flow: wrap;
 	 justify-content: space-between;
 	.newsInner{
+		width: 49%;
 		display: flex;
 		margin-bottom: 35px;
 	}
@@ -395,13 +504,15 @@ header{
 	position: absolute;
 	bottom:136px;
 	background: rgba(247,247,247,0.6);
-	padding: 35px 0 26px 0;
+	padding: 26px 0 26px 0;
 	h1{
-		text-indent: 156px;
+		padding-left: 152px;
+		text-align: left;
 		font-size: 100px;
 		color: #000;
 		span{
 			color: #af0917;
+			font-weight: bold;
 		}
 	}
 
@@ -409,11 +520,14 @@ header{
 ///////////////end video bg
 
 //autonews
+.mainAutonews{
+	background-color: #F7F7F7;
+}
 .autoNews{
 	margin-bottom: 15px;
 	background-color: white;
     padding: 8px 100px 10px 20px;
-    box-shadow: 0 0 7px black;
+    box-shadow: 0 0 30px -2px #C4C4C4;
 	div{
 	min-height: 75px;
 	padding: 0 0 0 82px;
@@ -425,7 +539,7 @@ header{
 	}
 	}
 .autoNews:hover{
-	    box-shadow: 0px 0px 16px 0px black;
+	    box-shadow: 0 0 20px 3px #C4C4C4;
 	    transition:all 0.4s;
 	    cursor:pointer;
 }
@@ -438,6 +552,10 @@ header{
 }
 //autonews
 //footer
+.FotMobApps p span{
+	text-align: left;
+	font-size: 38px;
+}
 footer{
 	background-color: #1B1B1B;
 }
@@ -472,14 +590,17 @@ img{
 }
 }
 .topFooter{
-	padding: 39px 0 25px 0px;
+	padding: 39px 3% 25px 3%;
 }
 
 .contacts{
 	padding-left: 70px;
 	p{
-		margin-bottom: 15px;
-		i{
+		display: flex;
+		margin-bottom: 14px;
+		img{
+			max-width: 42px;
+			max-height: 42px;
 			display: inline-block;
 			margin-right: 15px;
 		}
@@ -490,12 +611,12 @@ img{
 	}	
 }
 .FotMobApps{
-
+	margin-top: 22px;
 	text-align: right;
 	i{
 	display: inline-block;
     margin-right: 23px;
-    font-size: 100px;
+    font-size: 90px;
 	}
 	p{
 	display: flex;
@@ -512,4 +633,417 @@ img{
 	}
 
 }
+
 //footer
+.headerNews h1{
+	background: rgba(255, 255, 255, 0.9);
+	text-transform: uppercase;
+    color: #B11116;
+    font-size: 91px;
+    font-family: PT-Bold;
+    padding-bottom: 58px;
+}
+.forPhoneBlock{
+	position: relative;
+}
+.forPhoneBlock .leftPhone{
+	max-width: 268px;
+	position: absolute;
+	z-index: 2;
+	top: -28px;
+}
+@media(max-width: 1720px){
+.forPhoneBlock .leftPhone{
+	max-width: 268px;
+    position: absolute;
+    top: -29px;
+    left: -39px;
+}
+}
+@media(max-width: 1664px){
+	.logoText p{
+
+	}
+	.autoNews{padding: 8px 10px 10px 20px;}
+	.mainOfflineCatalog h1{font-size: 70px;}
+	.threeBlocks h3{font-size: 30px;}
+	.adress, .contacts, .FotMobApps{
+		font-size: 37px;
+	}
+	.FotMobApps p span{font-size: 37px;}
+}
+@media(max-width: 1500px){
+	.mainOfflineCatalog h1 {
+    font-size: 54px;
+    line-height: 76px;
+}
+	.mainOfflineCatalog h1 .leftPhone{
+		    max-width: 214px;
+			left: -1%;
+			top: -49px;
+	}
+	.mainOfflineCatalog h1 .rightAndroid{
+		max-width: 87px;
+		top: -20px;
+	}
+	.spanAndroid{
+		top: 0;
+		i{
+			font-size: 90px;
+		}
+	}
+	.forPhoneBlock .leftPhone {
+    max-width: 195px;
+    position: absolute;
+    top: -29px;
+    left: 0px;
+}
+}/// end 1500
+@media(max-width: 1470px){
+
+	.FotMobApps p span{font-size: 34px;}
+	.contacts p img{
+		max-width: 30px;
+		max-height: 30px;
+	}
+	.FotMobApps{margin-top: 0;}
+	.headerNews h1{font-size: 80px;}
+	.threeBlocks h3{font-size: 24px;}
+	.threeBlocks select,.threeBlocks input{font-size: 20px;}	
+	.threeBlocks select{
+		height: 41px;
+		background-position: 100% -7px;
+	}
+	.threeBlocks input{height: 41px;}
+	.search{display: flex;}
+	.autoNews div{background-size: 58px;}
+	.autoNews div p{font-size: 30px;}
+	.adress h1,.adress, .contacts, .FotMobApps
+	{font-size: 30px;}
+	.content h1{font-size: 70px;}
+	.carBg{
+		background-position: 100% 27px;
+	}
+
+}//end 1470
+@media(max-width: 1199px){
+.spanAndroid{top: 9px;}
+.contacts p{
+	margin-bottom: 5px;
+}
+.content h1{
+	padding-left: 0;
+	text-align: center;
+	font-size: 60px;
+}
+main{padding: 0 2%;}
+.topmenuAndroid ul li a,.dropdown{
+	font-size: 23px;
+}
+.topmenuAndroid ul li{margin-right: 10px;}
+.dropdown{margin-left: 20px;}
+.logoText p{font-size: 1.8 vmax;}
+.news .newsInner{
+	width: 100%;
+	margin: 0 auto 20px auto;
+}
+.adress h1, .adress, .contacts, .FotMobApps{
+	font-size: 23px;
+}
+.adress .local img{top: -7px;}
+.mainOfflineCatalog h1{
+	font-size: 46px;
+    line-height: 86px;
+    padding: 0px 134px;
+}
+.spanAndroid{
+	top: 0;
+	i{font-size: 87px;}
+}
+.forPhoneBlock .leftPhone {
+    max-width: 175px;
+    position: absolute;
+    top: -22px;
+    left: 0%;
+}
+.headerNews h1{
+		font-size: 48px;
+		padding-bottom: 30px;
+	}
+	.mainOfflineCatalog{padding: 0;}
+	.mainOfflineCatalog h1 .leftPhone{
+		max-width: 162px;
+    	top: -10px;
+	}
+.offlineCatalog{
+	padding: 0 3%;
+	margin-top: 5px;
+}
+.mainOfflineCatalog h1 .rightAndroid {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    max-width: 72px;}
+.sliderContent h3{font-size: 35px;}
+.FotMobApps p span{font-size: 23px;}
+
+}//end 1199px
+@media(max-width: 991px){
+.forPhoneBlock .leftPhone {
+    max-width: 134px;
+    position: absolute;
+    top: -16px;
+    left: 5%;
+}
+.FotMobApps p span{font-size: 16px;}
+.contacts p{
+	margin-bottom: 10px;
+	img{
+		max-width: 20px;
+		max-height: 20px;
+	}
+}
+.carBg{background-position: 100% -5px;}
+.surcleBg{background-position: 100% 32px;}
+.lineBg{background-position: 100% 8px;}
+.headerNews h1{margin-top: 20px;}	
+.mainOfflineCatalog h1{
+	font-size: 35px;
+    padding: 0 83px 0 129px;
+    line-height: 66px;
+}
+.mainOfflineCatalog h1 .leftPhone {
+    max-width: 175px;
+    top: -17px;
+    left: -62px;
+}
+.mainOfflineCatalog h1 .rightAndroid{
+	max-width: 54px;
+	top: 10px;
+}
+	.logoText{
+		text-align: center;
+		img{
+			max-width: 100%;
+		}
+		p{
+			font-size: 31px;
+			width: 100%;
+			min-width: 100%;
+			padding-left: 0;
+		}
+	}
+	.containerMenu{
+		display: inline-block;
+	}
+	.dropdown{margin-left: 0;}
+	.dropdown i{top: -5px;left: 24px;}
+	.topmenuAndroid ul{
+		min-height: 23px;
+		position: relative;
+		width: 100%;
+		text-align: left;
+		padding-left: 10px;
+		margin-right: 0;
+	li{
+		margin-right: 0;
+		float: none;
+		a{
+			display: block;
+			padding: 2px 0;
+		}
+	}
+	}
+
+.topmenuAndroid nav ul li > a:hover{
+	transform:scale(1);
+}
+.containerMenu{
+	position: absolute;
+	top: -6px;
+	right: 10px;
+}
+.topmenuAndroid nav{
+	position: relative;
+	min-height: 23px;
+}
+.hiddenMenu nav ul{
+	display: none;
+}
+.android{text-align: center;}
+.threeBlocks{margin-bottom: 15px;}
+.threeBlocks select,
+.threeBlocks h3,.threeBlocks input
+{margin-bottom: 15px;}
+.sliderContent h3{font-size: 20px;}
+.content h1{font-size: 41px;}
+.content{padding: 26px 0;}
+.content{bottom: 48px;}
+.adress h1, .adress, .contacts, .FotMobApps{
+	font-size: 16px;
+}
+.adress{padding-left: 25px;}
+.adress .local img{
+	max-width: 23px;
+	left: -27px;
+	top: -2px;
+}
+.contacts{padding-left: 0;}
+.FotMobApps i{font-size: 60px; margin-right: 10px;}
+.contacts p i{margin-right: 5px;}
+.topFooter{padding: 20px 0 10px 0px;}
+.searchSection,.sectionThreeBlocks,
+.sectionSlider,.headingSection,.wrapDescriptionSection,
+.contentSection{padding: 0 3%;}
+.spanAndroid{
+	top: 3px;
+	i{
+		font-size: 61px;
+	}
+}
+
+}//end mw 991px
+@media(max-width: 769px){
+.forPhoneBlock .leftPhone {
+    max-width: 111px;
+    position: absolute;
+    top: -16px;
+    left: 0%;
+}
+	.spanAndroid{
+		top: 4px;
+		i{
+			font-size: 45px;
+		}
+	}
+	.headerThreeBlocks{
+		padding-bottom: 0;
+	}
+	main{
+		padding: 0 3%;
+	}
+	.mainNews,.autonewsBG{padding-top: 15px;}
+	.h1Headers{margin-bottom: 15px;}
+	.newsInner img{max-width: 100%;}
+	.blockVideo{height: 398px;}
+	.owl-theme .owl-nav.disabled + .owl-dots{
+		bottom: 10px;
+    	right: 6px;
+	}
+	.owl-theme .owl-dots .owl-dot span{
+		width: 20px;
+		height: 20px;
+	}
+	.sliderContent h3{
+		bottom: 65px;
+	}
+	.menuLogo{padding-bottom: 0;}
+	.search{
+		input {padding: 10px;}
+		padding: 10px 0;
+		button {margin-left: 0;}
+	}
+	.FotMobApps{text-align: left;}
+	.adress .local img{left: -28px;}
+	.copyrights p{font-size: 14px;}
+	.mainOfflineCatalog h1{
+		font-size: 22px;
+		padding: 0 93px;
+		line-height: 53px;
+	}
+	.mainOfflineCatalog h1 .leftPhone{
+		max-width: 116px;
+		top: -18px;
+		left: -2%;
+	}
+	.mainOfflineCatalog h1 .rightAndroid{
+		max-width: 43px;
+		top: 2px;
+	}
+}//end 768px
+@media(max-width: 560px){
+	.newsText h3{
+		font-size: 20px;
+		margin-bottom: 12px;
+		margin-top: 5px;
+	}
+	.logoText p{font-size: 20px;}
+	.autoNews div p{font-size: 17px;}
+	.autoNews{padding: 8px 8px 10px 20px;}
+	.content h1 span{display: block;}
+	div.content{bottom: 63px;}
+	.newsText{padding: 0 5px;}
+	.newsText p{font-size: 19px;}
+	.news .newsInner{margin-bottom: 30px;}
+	.content{
+	padding: 7px 0; 
+		h1 {font-size: 30px;}
+	}
+	.h1Headers{
+		margin-bottom: 30px;
+		font-size: 40px;
+	}
+	.threeBlocks{padding: 10px;}
+	.threeBlocks h3{font-size: 18px;}
+	.threeBlocks select, .threeBlocks input{font-size: 16px;}
+	.threeBlocks button{max-width: 75px; padding: 6px;}
+	.sliderContent h3{
+		bottom: 33px;
+		font-size: 13px;
+		padding: 7px 15px;
+	}
+	.owl-theme .owl-nav.disabled+.owl-dots{bottom: 0;}
+	.mainOfflineCatalog h1{
+		font-size: 15px;
+		line-height: 32px;
+		padding: 0 43px;
+	}
+	.mainOfflineCatalog h1 .leftPhone{
+		max-width: 59px;
+		top: -4px;
+	}
+	.mainOfflineCatalog h1 .rightAndroid{
+		max-width: 24px;
+		top: 2px;
+	}
+	.headerNews h1{font-size: 30px;}
+	.carBg{
+		background-position: 100% 3px;
+    	background-size: 139px;
+	}
+	.surcleBg{
+		background-position: 100% 28px;
+		background-size: 100px;
+	}
+	.lineBg{
+		background-position: 100% 11px;
+		background-size: 114px;
+	}
+	.spanAndroid{
+		top: 0;
+		i{
+			font-size: 32px;
+		}
+	}
+		.forPhoneBlock .leftPhone {
+    max-width: 69px;
+    position: absolute;
+    top: -11px;
+    left: 0%;
+}
+}//end 560px
+@media(max-width: 350px){
+
+	.sliderContent h3,.mainOfflineCatalog h1{font-size: 10px;}
+	.owl-theme .owl-dots .owl-dot span{width: 10px; height: 10px;}
+	.mainOfflineCatalog h1 .leftPhone{left: -28px; top: -4.5px;}
+	.mainOfflineCatalog h1{line-height: 26px;}
+	.forPhoneBlock .leftPhone {
+    max-width: 54px;
+    position: absolute;
+    top: -7px;
+    left: 0%;
+}
+	.spanAndroid i{font-size: 27px;}
+	
+}

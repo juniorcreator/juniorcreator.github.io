@@ -1,7 +1,13 @@
 @import "style.scss";
 .wrapPodborMarcAuto{
-	 background: rgba(252, 252, 252, 0.6);
+	 background: rgba(252, 252, 252, 0.8);
 	 padding: 22px 56px;
+}
+.tableDatas tr td a{
+	color: #B11116;
+	&:hover{
+		text-decoration: none;
+	}
 }
 .twoSelect{
 	justify-content: space-between;
@@ -70,3 +76,32 @@
 	border:none;
 	background-color: white;
 }
+@media(max-width: 1600px){
+	.twoSelect div{margin-right: 20px;}
+	.twoSelect div:last-child{margin-right: 0;}
+}//end media
+@media(max-width: 991px){
+	.mainWrapSelect{padding: 10px 20px;}
+	.mainWrapSelect h3{font-size: 30px; margin-bottom: 10px;}
+	.mainWrapSelect select{
+		font-size: 26px; 
+		height: 35px;
+		background-position: 100% -11px;
+	}
+	.tableDatas .headerTable{font-size: 18px;}
+	.tableDatas .headerTable th{vertical-align: middle;}
+	.tableDatas tbody tr td{font-size: 18px;}
+	.tableDatas .kodeMotor{font-size: 18px;}
+
+
+}//end media
+@media(max-width: 769px){
+	.twoSelect {flex-wrap: wrap;}
+	.twoSelect div{
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	.wrapPodborMarcAuto{padding: 12px;}
+	.twoSelect{padding-bottom: 0;}
+}//end media
+@media(max-width: 1199px){}//end media

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>katalog</title>
+    <title>Contacts</title>
     <!-- Magnific Popup core CSS file -->
     <link rel="stylesheet" href="libs/Magnific-Popup-master/magnific-popup.css">
     <!-- Карусель-->
@@ -16,7 +16,7 @@
     <link href="libs/bootstrap/css/bootstrap-theme.css" rel="stylesheet">
     <!-- Bootstrap -->
     <!-- Звичайні стилі-->
-    <link rel="stylesheet" href="scss/katalog.css" rel="stylesheet/less">
+    <link rel="stylesheet" href="scss/contacts.css" rel="stylesheet/less">
     <!-- Звичайні стилі-->
     <!-- Font awesome-->
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
@@ -32,8 +32,9 @@
 <!-- Logo and menu -->
   <header>
     <section class="headerSection">
-      <div class="container headerContainer">
-          <div class="menuLogo">
+        <div class="menuLogo">
+
+          <div class="container headerContainer">
             <div class="row">
               <div class="col-md-3">
                 <div class="logoText">
@@ -52,9 +53,9 @@
                       <ul>
                         <li><a  href="index.html">главная</a></li>
                         <li><a href="aboutKompany.html">о компании</a></li>
-                        <li><a class="activeLink" href="katalog.html">каталог</a></li>
+                        <li><a href="katalog.html">каталог</a></li>
                         <li><a href="news.html">новости</a></li>
-                        <li><a href="contacts.html">контакты</a></li>
+                        <li><a class="activeLink" href="contacts.html">контакты</a></li>
                         <li>
                           <div class="dropdown">
                             <div class="dropbtn" onclick="myFunctions()">ru</div>
@@ -82,78 +83,132 @@
             </div>
           </div>
         </div>
-         <section class="heading"> 
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                 <div class="headerNews">
-                    <h1>каталог</h1>
+        <!-- headerNews -->
+        <div class="container">
+          <div class="row wrapContacts">
+            <div class="col-md-12 col-lg-4">
+              <div class="headerNews">
+                <h1>контакты</h1>
+              </div>
+              <div class="wrapadressPhone">
+                <p class="adressContact"> ул. 30-летия Победи, 5 Черкассы</p>
+                <p class="pPhone"><img src="img/33333.png" alt=""><span class="hponeBoldContacts">(0472) 999999</span></p>
+              </div>
+              <div class="wrapadressPhone">
+                <p class="adressContact"> ул. 30-летия Победи, 5 Черкассы</p>
+                <p class="pPhone"> <img src="img/33333.png" alt=""><span class="hponeBoldContacts">(0472) 999999</span></p>
+              </div>
+            </div>
+            <div class="col-md-8">
+              <img src="img/map2.png" alt="">
+              <h3>ООО "Альфа Фильтр"</h3>
+            </div>
+          </div>
+        </div>
+        <div class="wrapContPhones">
+           <div class="container">
+             <div class="row">
+               <div class="col-md-4 col-sm-4 col-xs-12">
+                 <div class="roundIconContact">
+                   <p>
+                     <span class="socialItem fb"><i class="fab fa-facebook-f"></i></span>
+                     <span class="textSocial">xxxxxxxxxxxxxxxxxxxxxx</span>
+                   </p>
+             
                  </div>
-              </div>
-            </div><!-- end header About Kompany -->
-          </div>
-        </section>
-    </section>
-    
-    <section class="searchSection">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="search">
-                  <input type="search" name="search" placeholder="Поиск">
-                  <button><i class="fas fa-search"></i></button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="sectionThreeBlocks">
-          <div class="container">
-            <div class="headerThreeBlocks">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="carBg">
-                    <div class="threeBlocks">
-                        <h3>Подбор фильтра по марке авто</h3>
-                        <select name="markAuto" id="">
-                          <option value="acura">ACURA</option>
-                          <option value="acura">ACURA1</option>
-                          <option value="acura">ACURA2</option>
-                          <option value="acura">ACURA3</option>
-                        </select>
-                        <a href="katalog.html">
-                          <button class="next">далее</button>
-                        </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="surcleBg">
-                    <div class="threeBlocks threeBlocksActive">
-                      <h3>Подбор фильтра по аналогу</h3>
-                      <input type="text" placeholder="Введите код аналога / OEM">
-                      <a href="katalog.html">
-                        <button class="next">далее</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="lineBg">
-                    <div class="threeBlocks">
-                      <h3>Подбор фильтра по размерам</h3>
-                      <input type="text" placeholder="Введите тип фильтра">
-                      <a href="katalog.html">
-                        <button class="next">далее</button>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-    </header><!-- End header -->
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12">
+                 <div class="roundIconContact">
+                   <p class="centerContacts">
+                     <span class="socialItem email"><i class="far fa-envelope"></i></span>
+                     <span class="textSocial">olegboichuk@alpha-filter.com</span>
+                   </p>
+                 </div>
+               </div>
+               <div class="col-md-4 col-sm-4 col-xs-12">
+                 <div class="roundIconContact">
+                   <p class="rightContacts">
+                     <span class="socialItem instagram"><i class="fab fa-instagram"></i></span>
+                     <span class="textSocial">xxxxxxxxxxxxxxxxxxxxxx</span>
+                   </p>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div> <!-- end telephones fb ins -->
+         <div class="wrapElitDistrub">
+           <div class="container">
+             <div class="row">
+               <div class="col-md-12">
+                 <div class="elitSelect">
+                   <select name="" id="" class="exlusivDestributor">
+                     <option value="exlusiveDistributer">
+                      Эксклюзивный дистрибютор
+                    </option>
+                    <option value="exlusiveDistributer2">
+                      Эксклюзивный дистрибютор2
+                    </option>
+                    <option value="exlusiveDistributer3">
+                      Эксклюзивный дистрибютор3
+                    </option>
+                    <option value="exlusiveDistributer4">
+                      Эксклюзивный дистрибютор4
+                    </option>
+                    <option value="exlusiveDistributer5">
+                      Эксклюзивный дистрибютор5
+                    </option>
+                   </select>
+                 </div> <!-- select -->
+                 <div class="adressContacts">
+                   <p>
+                     ООО "Дрим Партс" <br>
+               Адрес: 127591, г. Москва, ул. Дубнинская, д. 79Б, строение 5 <br>
+               e-mail: info@drimparts.ru, atltd@list.ru <br>
+               тел: +7(963)639-71-81, +7(499)963-55-20, +7(925)675-33-93
+                   </p>
+                 </div>
+               
+               </div>
+             </div>
+           </div>
+         </div> <!-- end wrapElitDistrub -->
+         <div class="wrapAskQuestion">
+           <div class="container">
+             <div class="row">
+               <div class="col-md-6">
+                 <form action="" name="contactsForm">
+                   <h3>Задать вопрос</h3>
+                   <p>
+                     <input type="text" name="name" placeholder="Имя" required>
+                   </p>
+                   <p>
+                     <input type="text" name="email" placeholder="E-mail" required>
+                     </p>
+                   <p class="headingTextArea">
+                     Сообщение
+                   </p>
+                   <textarea name="message" id=""></textarea>
+                   <p>
+                     <button type="submit">Отправить</button>
+                   </p>
+                 </form>
+               </div>
+               <div class="col-md-6">
+                 <div class="wrapperMap">
+                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2595.1745120869537!2d32.011471115849346!3d49.42451466863152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d14c127511b731%3A0xffacd2e3793f6f9e!2z0LLRg9C70LjRhtGPIDMwLdGA0ZbRh9GH0Y8g0J_QtdGA0LXQvNC-0LPQuCwgNSwg0KfQtdGA0LrQsNGB0LgsINCn0LXRgNC60LDRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgMTgwMDA!5e0!3m2!1sru!2sua!4v1521629351245" frameborder="0" style="border:0" allowfullscreen></iframe>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+        <!-- end headerNews -->
+        <!-- newsThreeBlocks -->
+        <!--  ENDnewsThreeBlocks -->
+  </section>
+    </header>
+      <!-- End header -->
+  <!-- NewsContent -->
+  <!-- END NewsContent -->
   <!-- ///footer -->
   <section class="sectionFooter">
     <footer>
@@ -253,9 +308,6 @@
     <!-- jQuery UI-->
     <script src="js/jquery-ui.min.js"></script>
     <!-- jQuery UI-->
-    <!-- Horizontal carousel-->
-    <script src="libs/horizontalScroll/jquery.carousel.js"></script>
-    <!-- Horizontal carousel-->
     <!--Lievereload для самостійної перезагрузки сторінки -->
       <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
     <!--Lievereload -->

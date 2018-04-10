@@ -30,430 +30,448 @@
   </head>
   <body>
 <!-- Logo and menu -->
-<div class="container">
-    <header>
-      <div class="bgHeader">
-      <div class="menuLogo">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="logoText">
-              <a href="index.html">
-                <img src="img/logo.png" alt="logo">
-              </a>
-              <p>
-                  Производство фильтров для автомобилей и другой техники
-              </p>   
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="right">
-              <div class="topmenuAndroid">
-                <nav>
-                  <ul>
-                    <li><a class="activeLink" href="#">главная</a></li>
-                    <li><a href="aboutKompany.html">о компании</a></li>
-                    <li><a href="katalog.html">каталог</a></li>
-                    <li><a href="news.html">новости</a></li>
-                    <li><a href="#">контакты</a></li>
-                    <li>
-                      <div class="dropdown">
-                        <div class="dropbtn" onclick="myFunctions()">ru</div>
-                          <i class="fas fa-sort-down"></i>
-                          <div class="dropdownСontent" id="myDropdown">
-                            <a class="ruLang" href="#">ru</a>
-                            <a class="uaLang" href="#">ua</a>
-                          </div>
-                      </div>
-                    </li>
-                  </ul>
-                </nav>
+  <header>
+    <section class="headerSection">
+      <div class="container headerContainer">
+          <div class="menuLogo">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="logoText">
+                  <a href="index.html">
+                    <img src="img/logo.png" alt="logo">
+                  </a>
+                  <p>
+                      Производство фильтров для автомобилей и другой техники
+                  </p>   
+                </div>
               </div>
+              <div class="col-md-9 col-sm-12">
+                <div class="right">
+                  <div class="topmenuAndroid hiddenMenu">
+                    <nav>
+                      <ul>
+                        <li><a class="activeLink" href="#">главная</a></li>
+                        <li><a href="aboutKompany.html">о компании</a></li>
+                        <li><a href="katalog.html">каталог</a></li>
+                        <li><a href="news.html">новости</a></li>
+                        <li><a href="contacts.html">контакты</a></li>
+                        <li>
+                          <div class="dropdown">
+                            <div class="dropbtn" onclick="myFunctions()">ru</div>
+                              <i class="fas fa-sort-down"></i>
+                              <div class="dropdownСontent" id="myDropdown">
+                                <a class="ruLang" href="#">ru</a>
+                                <a class="uaLang" href="#">ua</a>
+                              </div>
+                          </div>
+                        </li>
+                        
+                      </ul>
+                      <div class="containerMenu" onclick="myFunctionMenu(this),funcHideShow()">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                      </div>
+                    </nav>
+                  </div>
+                 </div>
+                <div class="android">
+                  <a href="#"><img src="img/headerabdroid.png" alt=""></a>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+        <section class="searchSection">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="search">
+                  <input type="search" name="search" placeholder="Поиск">
+                  <button><i class="fas fa-search"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="sectionThreeBlocks">
+          <div class="container">
+            <div class="headerThreeBlocks">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="carBg">
+                    <div class="threeBlocks noBoxShadow">
+                        <h3>Подбор фильтра по марке авто</h3>
+                        <select name="markAuto" id="">
+                          <option value="acura">ACURA</option>
+                          <option value="acura">ACURA1</option>
+                          <option value="acura">ACURA2</option>
+                          <option value="acura">ACURA3</option>
+                        </select>
+                        <a href="katalog.html">
+                          <button class="next">далее</button>
+                        </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="surcleBg">
+                    <div class="threeBlocks threeBlocksActive">
+                      <h3>Подбор фильтра по аналогу</h3>
+                      <input type="text" placeholder="Введите код аналога / OEM">
+                      <a href="katalog.html">
+                        <button class="next">далее</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="lineBg">
+                    <div class="threeBlocks">
+                      <h3>Подбор фильтра по размерам</h3>
+                      <input type="text" placeholder="Введите тип фильтра">
+                      <a href="katalog.html">
+                        <button class="next">далее</button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          <!-- slider -->
+    <section class="sectionSlider">
+      <div class="slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel owl-theme" id="mainCarousel">
+                <div class="sliderContent">
+                  <h3>Воздушные фильтры Alpha Filter. Внимание к мелочам.</h3>
+                  <img src="img/slider.jpg" alt="slider">
+                </div>
+                <div class="sliderContent">
+                  <h3>Воздушные фильтры Alpha Filter. Внимание к мелочам.</h3>
+                  <img src="img/slider.jpg" alt="slider">
+                </div>
+                <div class="sliderContent">
+                  <h3>Воздушные фильтры Alpha Filter. Внимание к мелочам.</h3>
+                  <img src="img/slider.jpg" alt="slider">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- end slider -->
+      </header>
+    </div>
+  </main>
+    <section class="sectionOffLineKatalog">
+      <div class="forPhoneBlock">
+        <img src="img/phone.png" alt="phone" class="leftPhone">
+        <div class="offlineCatalog">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="mainOfflineCatalog">
+                  <a href="aboutKompany.html" alt="download">
+                  <h1>
+                    
+                    off-line каталог <span>для android</span> 
+                    <span class="spanAndroid">
+                      <i class="fab fa-android"></i>
+                    </span>
+                  </h1>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- end offline catalog  -->
+    <!-- News -->
+    <main class="mainHeader mainNews">
+     <section class="sectionNews">
+        <div class="container"> 
+           <h1 class="h1Headers">новости</h1>
+       </div>
+         <div class="container">
+           <div class="news">
+             <div class="newsInner">
+               <div class="newsText">
+                 <h3>
+                   5-я церемония награждения 
+                 </h3>
+                 <p>
+                   По итогам 2011 года, согласно рейтингу Комитета экономического развития...  
+                 </p>
+               </div>
+               <div>
+                 <img src="img/bluecar.png" alt="">
+               </div>
              </div>
-            <div class="android">
-              <a href="#"><img src="img/headerabdroid.png" alt=""></a>
-            </div> 
+             <div class="newsInner">
+               <div class="newsText">
+                 <h3>
+                   5-я церемония награждения 
+                 </h3>
+                 <p>
+                   По итогам 2011 года, согласно рейтингу Комитета экономического развития... 
+                 </p>
+               </div>
+               <div>
+                 <img src="img/bluecar.png" alt="">
+               </div>
+             </div>
+             <div class="newsInner">
+               <div>
+                 <img src="img/orangecar.png" alt="">
+               </div>
+               <div class="newsText">
+                 <h3>
+                   5-я церемония награждения 
+                 </h3>
+                 <p>
+                   По итогам 2011 года, согласно рейтингу Комитета экономического развития...   
+                 </p>
+               </div>
+             </div>
+             <div class="newsInner">
+                 <div>
+                   <img src="img/orangecar.png" alt="">
+                 </div>
+                 <div class="newsText">
+                   <h3>
+                     5-я церемония награждения 
+                   </h3>
+                   <p>
+                     По итогам 2011 года, согласно рейтингу Комитета экономического развития...  
+                   </p>
+                 </div>
+             </div>
+           </div>
+         </div>
+     </section>
+   </main>
+  <!-- end news -->
+  <!-- //video background -->
+  
+    <section class="sectionVideo">
+      <div class="blockVideo">
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+          <source src="video/videoplayback.mp4" type="video/mp4">
+        </video>
+        <!-- Optional: some overlay text to describe the video -->
+        <a href="#">
+          <div class="content">
+            <h1>Подробно о компании <span>Alpha Filter</span></h1>
+            <!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
           </div>
+        </a>
+      </div>
+    </section>
+  
+  <!-- //END video background -->
+  <!-- //AutoNews -->
+  <main class="mainAutonews">
+    <section class="sectAutoNews">
+      <div class="autonewsBG">
+        <div class="container">  
+              <h1 class="h1Headers">автоновости</h1>
         </div>
-      </div>
-      <div class="search">
-        <input type="search" name="search" placeholder="Поиск">
-        <button><i class="fas fa-search"></i></button>
-      </div>
-      <div class="headerThreeBlocks">
-        <div class="row">
-          <div class="col-md-4">
-            <div class="threeBlocks">
-              <h3>Подбор фильтра по марке авто</h3>
-              <select name="markAuto" id="">
-                <option value="acura">ACURA</option>
-                <option value="acura">ACURA1</option>
-                <option value="acura">ACURA2</option>
-                <option value="acura">ACURA3</option>
-              </select>
-              <a href="https://goole.com">
-                <button class="next">далее</button>
-              </a>
+        <div class="wrapAutonews">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    У Peugeot появится 
+                    купеобразный кроссовер 4008
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    Никакого компромисса. Переговоры 
+        по еврономерам зашли в тупик
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    У Peugeot появится 
+                    купеобразный кроссовер 4008
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    У Peugeot появится 
+        купеобразный кроссовер 4008
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    Прокуратура Германии завела дело 
+        по "омоложению" автомобилей для Украины
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    У Peugeot появится 
+                    купеобразный кроссовер 4008
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    У Peugeot появится 
+                    купеобразный кроссовер 4008
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    У Peugeot появится 
+                    купеобразный кроссовер 4008
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    У Peugeot появится 
+                    купеобразный кроссовер 4008
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    У Peugeot появится 
+                    купеобразный кроссовер 4008
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    У Peugeot появится 
+                    купеобразный кроссовер 4008
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+              <div class="autoNews">
+                <div>
+                  <p>
+                    У Peugeot появится 
+                    купеобразный кроссовер 4008
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="threeBlocks threeBlocksActive">
-              <h3>Подбор фильтра по аналогу</h3>
-              <input type="text" placeholder="Введите код аналога / OEM">
-              <a href="#">
-                <button class="next">далее</button>
-              </a>
+        </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  
+  <!-- End AutoNews -->
+  <!-- ///footer -->
+  <section class="sectionFooter">
+    <footer>
+      <div class="topFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="adress">
+                <h1>«ООО Альфа Фильтр»</h1>
+                <p class="local"><img src="img/lokal.png" alt=""> ул. 30-летия Победы, 5</p>
+                <p>Черкассы 18029 Украина</p>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-4 col-sm-offset-1 col-xs-12 col-md-offset-0">
+              <div class="contacts">
+                <p><img src="img/fotphone.png" alt="">  +38 0472 38 24 38 </p>
+                <p><img src="img/fotmobPhone.png" alt="">  +38 050 176 63 79</p>
+                <p><img src="img/fotMail.png" alt=""> olegboichuk@alpha-filter.com</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="FotMobApps">
+                <a href="#">
+                  <p>
+                  <i class="fab fa-android"></i>
+                    <span>Мобильное<br> 
+                      приложение
+                    </span>
+                  </p>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="threeBlocks">
-              <h3>Подбор фильтра по размерам</h3>
-              <select name="markAuto" id="">
-                <option value="acura">Выберите тип фильтра</option>
-                <option value="acura">ACURA1</option>
-                <option value="acura">ACURA2</option>
-                <option value="acura">ACURA3</option>
-              </select>
-              <a href="#">
-                <button class="next">далее</button>
-              </a>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
-    </header>
-    <!-- slider -->
-  <div class="slider">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="owl-carousel owl-theme" id="mainCarousel">
-          <div class="sliderContent">
-            <h3>Воздушние фильиры Alpha Filter. Внимание к мелочам.</h3>
-            <img src="img/slider.jpg" alt="slider">
-          </div>
-          <div class="sliderContent">
-            <h3>Воздушние фильиры Alpha Filter. Внимание к мелочам.</h3>
-            <img src="img/slider.jpg" alt="slider">
-          </div>
-          <div class="sliderContent">
-            <h3>Воздушние фильиры Alpha Filter. Внимание к мелочам.</h3>
-            <img src="img/slider.jpg" alt="slider">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-    <!-- end slider -->
-</div> <!-- end container -->
-  <div class="offlineCatalog">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="mainOfflineCatalog">
-            <a href="#" alt="download">
-            <h1>
-              <img src="img/phone.png" alt="phone" class="leftPhone">
-              off-line каталог <span>для android</span> 
-              <img src="img/androig.gif" alt="" class="rightAndroid">
-            </h1>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- end offline catalog  -->
-  <!-- News -->
-  <div class="container"> 
-      <h1 class="h1Headers">новости</h1>
-  </div>
-<div class="container">
-  <div class="news">
-    <div class="newsInner">
-      <div class="newsText">
-        <h3>
-          5-я церемония награждения 
-        </h3>
-        <p>
-          По итогам 2011 года, согласно рейтингу Комитета экономического развития...  
-        </p>
-      </div>
-      <div>
-        <img src="img/bluecar.png" alt="">
-      </div>
-    </div>
-    <div class="newsInner">
-      <div class="newsText">
-        <h3>
-          5-я церемония награждения 
-        </h3>
-        <p>
-          По итогам 2011 года, согласно рейтингу Комитета экономического развития... 
-        </p>
-      </div>
-      <div>
-        <img src="img/bluecar.png" alt="">
-      </div>
-    </div>
-    <div class="newsInner">
-      <div>
-        <img src="img/orangecar.png" alt="">
-      </div>
-      <div class="newsText">
-        <h3>
-          5-я церемония награждения 
-        </h3>
-        <p>
-          По итогам 2011 года, согласно рейтингу Комитета экономического развития...   
-        </p>
-      </div>
-    </div>
-    <div class="newsInner">
-        <div>
-          <img src="img/orangecar.png" alt="">
-        </div>
-        <div class="newsText">
-          <h3>
-            5-я церемония награждения 
-          </h3>
-          <p>
-            По итогам 2011 года, согласно рейтингу Комитета экономического развития...  
-          </p>
-        </div>
-    </div>
-  </div>
-</div>
-<!-- end news -->
-<!-- //video background -->
-
-  <div class="blockVideo">
-    <!-- The video -->
-    <video autoplay muted loop id="myVideo">
-      <source src="video/videoplayback.mp4" type="video/mp4">
-    </video>
-    <!-- Optional: some overlay text to describe the video -->
-    <a href="#">
-      <div class="content">
-        <h1>Подробно о компании <span>Alpha Philter</span></h1>
-        <!-- <button id="myBtn" onclick="myFunction()">Pause</button> -->
-      </div>
-    </a>
-  </div>
-
-<!-- //END video background -->
-<!-- //AutoNews -->
-<div class="autonewsBG">
-  <div class="container">  
-        <h1 class="h1Headers">автоновости</h1>
-  </div>
-  <div class="wrapAutonews">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              У Peugeot появится 
-              купеобразный кроссовер 4008
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              Никакого компромисса. Переговоры 
-  по еврономерам зашли в тупик
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              У Peugeot появится 
-              купеобразный кроссовер 4008
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              У Peugeot появится 
-  купеобразный кроссовер 4008
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              Прокуратура Германии завела дело 
-  по "омоложению" автомобилей для Украины
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              У Peugeot появится 
-              купеобразный кроссовер 4008
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              У Peugeot появится 
-              купеобразный кроссовер 4008
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              У Peugeot появится 
-              купеобразный кроссовер 4008
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              У Peugeot появится 
-              купеобразный кроссовер 4008
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              У Peugeot появится 
-              купеобразный кроссовер 4008
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              У Peugeot появится 
-              купеобразный кроссовер 4008
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="autoNews">
-          <div>
-            <p>
-              У Peugeot появится 
-              купеобразный кроссовер 4008
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  </div>
-</div>
-
-
-<!-- End AutoNews -->
-<!-- ///footer -->
-<footer>
-  <div class="topFooter">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="adress">
-            <h1>ООО "Альфа Фильтр"</h1>
-            <p class="local"><img src="img/lokal.png" alt=""> ул. 30-летия Победы, 5</p>
-            <p>Черкассы 18029 Украина</p>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="contacts">
-            <p><i class="fas fa-phone-volume"></i>  +38 0472 382438 </p>
-            <p><i class="fas fa-mobile"></i>  +38 050 176 63 79</p>
-            <p><i class="far fa-envelope"></i> olegboichuk@alpha-filter.com</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="FotMobApps">
-            <a href="#">
+      <div class="copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
               <p>
-              <i class="fab fa-android"></i>
-                Мобильное<br> 
-                приложение
+                Copyright &copy; 
               </p>
-            </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="copyrights">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p>
-            Copyright &copy; 
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
+  </section>
+
 
 <!-- //footer -->
 <!-- ////////////////// -->
 
-
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-      </div>
-    </div>
-  </div>
 <!-- /////////// -->
 
 <!-- END Logo and menu -->

@@ -30,303 +30,291 @@
   </head>
   <body>
 <!-- Logo and menu -->
-<div class="container">
-    <header>
-      <div class="bgHeader">
-      <div class="menuLogo">
-        <div class="row">
-          <div class="col-md-6">
-            <div class="logoText">
-              <a href="index.html">
-                <img src="img/logo.png" alt="logo">
-              </a>
-              <p>
-                  Производство фильтров для автомобилей и другой техники
-              </p>   
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="right">
-              <div class="topmenuAndroid">
-                <nav>
-                  <ul>
-                    <li><a href="index.html">главная</a></li>
-                    <li><a href="aboutKompany.html">о компании</a></li>
-                    <li><a href="katalog.html">каталог</a></li>
-                    <li><a class="activeLink" href="news.html">новости</a></li>
-                    <li><a href="#">контакты</a></li>
-                    <li>
-                      <div class="dropdown">
-                        <div class="dropbtn" onclick="myFunctions()">ru</div>
-                          <i class="fas fa-sort-down"></i>
-                          <div class="dropdownСontent" id="myDropdown">
-                            <a class="ruLang" href="#">ru</a>
-                            <a class="uaLang" href="#">ua</a>
-                          </div>
-                      </div>
-                    </li>
-                  </ul>
-                </nav>
+  <header>
+    <section class="headerSection">
+          <div class="container headerContainer">
+            <div class="menuLogo">
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="logoText">
+                    <a href="index.html">
+                      <img src="img/logo.png" alt="logo">
+                    </a>
+                    <p>
+                        Производство фильтров для автомобилей и другой техники
+                    </p>   
+                  </div>
+                </div>
+                <div class="col-md-9 col-sm-12">
+                  <div class="right">
+                    <div class="topmenuAndroid hiddenMenu">
+                      <nav>
+                        <ul>
+                          <li><a href="index.html">главная</a></li>
+                          <li><a href="aboutKompany.html">о компании</a></li>
+                          <li><a href="katalog.html">каталог</a></li>
+                          <li><a class="activeLink" href="news.html">новости</a></li>
+                          <li><a href="contacts.html">контакты</a></li>
+                          <li>
+                            <div class="dropdown">
+                              <div class="dropbtn" onclick="myFunctions()">ru</div>
+                                <i class="fas fa-sort-down"></i>
+                                <div class="dropdownСontent" id="myDropdown">
+                                  <a class="ruLang" href="#">ru</a>
+                                  <a class="uaLang" href="#">ua</a>
+                                </div>
+                            </div>
+                          </li>
+                          
+                        </ul>
+                        <div class="containerMenu" onclick="myFunctionMenu(this),funcHideShow()">
+                              <div class="bar1"></div>
+                              <div class="bar2"></div>
+                              <div class="bar3"></div>
+                        </div>
+                      </nav>
+                    </div>
+                   </div>
+                  <div class="android">
+                    <a href="#"><img src="img/headerabdroid.png" alt=""></a>
+                  </div> 
+                </div>
               </div>
-             </div>
-            <div class="android">
-              <a href="#"><img src="img/headerabdroid.png" alt=""></a>
-            </div> 
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- headerNews -->
-      <div class="row">
-        <div class="col-md-12">
-          <div class="headerNews">
-            <h1>новости</h1>
+          <!-- headerNews -->
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="headerNews">
+                  <h1>новости</h1>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <!-- end headerNews -->
-      <!-- newsThreeBlocks -->
-    <div class="wrapHeaderThreeBlocks">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="newsHeaderBlocks">
-            <img src="img/news/1.png" alt="newsImg">
-            <div>
-              <a href="#">
-                <h3>
-                  В Украине состоится масштабный тест-драйв новых кроссоверов 
-                  и внедорожников 
-                </h3>
-                <p>
-                  
-                </p>
-              </a>
+          <!-- end headerNews -->
+          <!-- newsThreeBlocks -->
+        <div class="wrapHeaderThreeBlocks">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="newsHeaderBlocks">
+                  <img src="img/news/1.png" alt="newsImg">
+                  <div>
+                    <a href="#">
+                      <h3>
+                        В Украине состоится масштабный тест-драйв новых кроссоверов 
+                        и внедорожников 
+                      </h3>
+                      <p>
+                        
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="newsHeaderBlocks">
+                  <img src="img/news/2.png" alt="newsImg">
+                  <div>
+                    <a href="#">
+                      <h3>
+                        Старую Honda Accord оснастили агерегатами Тесла
+                      </h3>
+                      <p>
+                         
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="newsHeaderBlocks">
+                  <img src="img/news/3.png" alt="newsImg">
+                  <div>
+                    <a href="#">
+                      <h3>
+                        Летающее такси совершило первый полет 
+                      </h3>
+                      <p>
+                        Летающее такси станет реальностью? Вполне возможно, ведь компания Airbus недавно продемонстрировала первый полет прототипа такого транспорта.
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="newsHeaderBlocks">
-            <img src="img/news/2.png" alt="newsImg">
-            <div>
-              <a href="#">
+       
+      </section>
+       </header> <!-- End header -->
+       
+    <!-- NewsContent -->
+    <div class="newsContentWrap">
+      <div class="container containerNewsContent">
+        <a href="pageOfNews.html" class="linkWrapNews">
+          <div class="row rowNewsContent">
+            <div class="col-md-6">
+              <div class="newsImg">
+                <img src="img/news/4.png" alt="news">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="newsContent">
                 <h3>
-                  Старую Honda Accord оснастили агерегатами Тесла
+                  Для богачей-экстремалов: 
+                  боевой Porsche Cayenne 
                 </h3>
-                <p>
-                   
+                <p class="dateTime"><span class="date">21.10.2015</span> <span class="time">12:27</span></p>
+                <p class="newsParagraphContent">
+                  Недавно Porsche представила новинку – 911 GT3 RS. 
+                  Но этим никого уже не впечатлить. Мы решили представить, какая машина нужна компании, чтобы прийти к хорошему успеху.
                 </p>
-              </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-md-4">
-          <div class="newsHeaderBlocks">
-            <img src="img/news/3.png" alt="newsImg">
-            <div>
-              <a href="#">
+        </a>
+        <a href="pageOfNews.html" class="linkWrapNews">
+          <div class="row rowNewsContent">
+            <div class="col-md-6">
+              <div class="newsImg">
+                <img src="img/news/5.png" alt="news">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="newsContent">
                 <h3>
-                  Летающее такси совершило первый полет 
+                  Спасибо аварийкой возведено 
+                  в культ в Украине и Японии 
                 </h3>
-                <p>
-                  Летающее такси станет реальностью? Вполне возможно, ведь компания Airbus недавно продемонстрировала первый полет прототипа такого транспорта.
+                <p class="dateTime"><span class="date">21.10.2015</span> <span class="time">12:27</span></p>
+                <p class="newsParagraphContent">
+                  Японские водители очень часто используют 
+                  аварийку, чтобы поблагодарить других 
+                  участников дорожного движения.
+          
                 </p>
-              </a>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="pageOfNews.html" class="linkWrapNews">
+          <div class="row rowNewsContent">
+            <div class="col-md-6">
+              <div class="newsImg">
+                <img src="img/news/6.png" alt="news">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="newsContent">
+                <h3>
+                  5-я церемония награждения 
+                  "Экспортер года" и "Импортер года"
+                </h3>
+                <p class="dateTime"><span class="date">21.10.2015</span> <span class="time">12:27</span></p>
+                <p class="newsParagraphContent">
+                  По итогам 2011 года, согласно рейтингу 
+                  Комитета экономического развития, НПП Альфа 
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="pageOfNews.html" class="linkWrapNews">
+          <div class="row rowNewsContent">
+            <div class="col-md-6">
+              <div class="newsImg">
+                <img src="img/news/7.png" alt="news">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="newsContent">
+                <h3>
+                  ЛІГА КРАЩИХ международный экономический рейтинг 
+                </h3>
+                <p class="dateTime"><span class="date">21.10.2015</span> <span class="time">12:27</span></p>
+                <p class="newsParagraphContent">
+                  Согласно данным Государственного комитета статистики Украины НПП Альфа заняло 6-е место в рейтинге предприятий по профилю "Производство узлов, деталей и принадлежностей для автомобилей и их 
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="wrapePagination">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="pagination">
+              <a href="#" class="linkPaleft"><</a>
+              <a href="#">1</a>
+              <a href="#" class="paginationActive">2</a>
+              <a href="#">3</a>
+              <a href="#" class="linkPagDots">...</a>
+              <a href="#">561</a>
+              <a href="#" class="linkPaRight">></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-      <!--  ENDnewsThreeBlocks -->
-    </div>
-    </header>
-  </div>
-    <!-- End header -->
-<!-- NewsContent -->
-<div class="newsContentWrap">
-  <div class="container containerNewsContent">
-    <a href="#" class="linkWrapNews">
-      <div class="row rowNewsContent">
-        <div class="col-md-6">
-          <div class="newsImg">
-            <img src="img/news/4.png" alt="news">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="newsContent">
-            <h3>
-              Для богачей-экстремалов: 
-              боевой Porsche Cayenne 
-            </h3>
-            <p class="dateTime"><span class="date">21.10.2015</span> <span class="time">12:27</span></p>
-            <p class="newsParagraphContent">
-              Недавно Porsche представила новинку – 911 GT3 RS. 
-              Но этим никого уже не впечатлить. Мы решили представить, какая машина нужна компании, чтобы прийти к хорошему успеху.
-            </p>
-          </div>
-        </div>
-      </div>
-    </a>
-    <a href="#" class="linkWrapNews">
-      <div class="row rowNewsContent">
-        <div class="col-md-6">
-          <div class="newsImg">
-            <img src="img/news/5.png" alt="news">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="newsContent">
-            <h3>
-              Спасибо аварийкой возведено 
-              в культ в Украине и Японии 
-            </h3>
-            <p class="dateTime"><span class="date">21.10.2015</span> <span class="time">12:27</span></p>
-            <p class="newsParagraphContent">
-              Японские водители очень часто используют 
-              аварийку, чтобы поблагодарить других 
-              участников дорожного движения.
-      
-            </p>
+    <!-- END NewsContent -->
+   <!-- ///footer -->
+  <section class="sectionFooter">
+    <footer>
+      <div class="topFooter">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12">
+              <div class="adress">
+                <h1>«ООО Альфа Фильтр»</h1>
+                <p class="local"><img src="img/lokal.png" alt=""> ул. 30-летия Победы, 5</p>
+                <p>Черкассы 18029 Украина</p>
+              </div>
+            </div>
+            <div class="col-md-5 col-sm-4 col-sm-offset-1 col-xs-12 col-md-offset-0">
+              <div class="contacts">
+                <p><img src="img/fotphone.png" alt="">  +38 0472 382438 </p>
+                <p><img src="img/fotmobPhone.png" alt="">  +38 050 176 63 79</p>
+                <p><img src="img/fotMail.png" alt=""> olegboichuk@alpha-filter.com</p>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-3 col-xs-12">
+              <div class="FotMobApps">
+                <a href="#">
+                  <p>
+                  <i class="fab fa-android"></i>
+                    <span>Мобильное<br> 
+                      приложение
+                    </span>
+                  </p>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </a>
-    <a href="#" class="linkWrapNews">
-      <div class="row rowNewsContent">
-        <div class="col-md-6">
-          <div class="newsImg">
-            <img src="img/news/6.png" alt="news">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="newsContent">
-            <h3>
-              5-я церемония награждения 
-              "Экспортер года" и "Импортер года"
-            </h3>
-            <p class="dateTime"><span class="date">21.10.2015</span> <span class="time">12:27</span></p>
-            <p class="newsParagraphContent">
-              По итогам 2011 года, согласно рейтингу 
-              Комитета экономического развития, НПП Альфа 
-            </p>
-          </div>
-        </div>
-      </div>
-    </a>
-    <a href="#" class="linkWrapNews">
-      <div class="row rowNewsContent">
-        <div class="col-md-6">
-          <div class="newsImg">
-            <img src="img/news/7.png" alt="news">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="newsContent">
-            <h3>
-              ЛІГА КРАЩИХ международный экономический рейтинг 
-            </h3>
-            <p class="dateTime"><span class="date">21.10.2015</span> <span class="time">12:27</span></p>
-            <p class="newsParagraphContent">
-              Согласно данным Государственного комитета статистики Украины НПП Альфа заняло 6-е место в рейтинге предприятий по профилю "Производство узлов, деталей и принадлежностей для автомобилей и их 
-            </p>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-</div>
-<div class="wrapePagination">
-  <div class="container">
-    <div class="row">
-      <div class="pagination">
-        <a href="#" class="linkPaleft"><</a>
-        <a href="#">1</a>
-        <a href="#" class="paginationActive">2</a>
-        <a href="#">3</a>
-        <a href="#" class="linkPagDots">...</a>
-        <a href="#">561</a>
-        <a href="#" class="linkPaRight">></a>
-        
-      </div>
-    </div>
-  </div>
-</div>
-<!-- END NewsContent -->
-<!-- ///footer -->
-<footer>
-  <div class="topFooter">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="adress">
-            <h1>ООО "Альфа Фильтр"</h1>
-            <p class="local"><img src="img/lokal.png" alt=""> ул. 30-летия Победы, 5</p>
-            <p>Черкассы 18029 Украина</p>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="contacts">
-            <p><i class="fas fa-phone-volume"></i>  +38 0472 382438 </p>
-            <p><i class="fas fa-mobile"></i>  +38 050 176 63 79</p>
-            <p><i class="far fa-envelope"></i> olegboichuk@alpha-filter.com</p>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <div class="FotMobApps">
-            <a href="#">
+      <div class="copyrights">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
               <p>
-              <i class="fab fa-android"></i>
-                Мобильное<br> 
-                приложение
+                Copyright &copy; 
               </p>
-            </a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-  <div class="copyrights">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <p>
-            Copyright &copy; 
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
+    </footer>
+  </section>
+
 
 <!-- //footer -->
 <!-- ////////////////// -->
 
 
-
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-        <p>wedwededw</p>
-      </div>
-    </div>
-  </div>
 <!-- /////////// -->
 
 <!-- END Logo and menu -->

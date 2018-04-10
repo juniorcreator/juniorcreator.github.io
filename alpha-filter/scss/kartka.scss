@@ -3,11 +3,13 @@
 	color: $headKartkaColor;
 	text-transform: uppercase;
 	font-size: 91px;
-	background: rgba(248,248,248,0.9);
 	font-family: $PT-bold;
 }
+.headingSection{
+	background: rgba(255,255,255,0.9);
+}
+.headerNews h1{background-color: transparent;}
 .backTo{
-	  background: rgba(248,248,248,0.9);
 	  padding-bottom: 15px;
 }
 .backTo{
@@ -84,11 +86,10 @@
 .infSises{
 	color: #262626;
 	font-size: 40px;
-	padding-bottom: 15px;
 	border-bottom: 2px solid #B41A1F;
 	margin-bottom: 25px;
 	font-weight: bold;
-	text-indent: 16px;
+	padding: 0 0 15px 16px;
 }
 
 
@@ -100,8 +101,10 @@
 	justify-content: space-between;
 }
 .infoAboutProduct{
+	display: flex;
     max-width: 518px;
     width: 100%;
+    flex-direction: column;
 
 }
 .wrapContentKatalog{
@@ -109,7 +112,10 @@
 	flex-direction: column;
 }
 .usingFor{
-	margin-top: 30px;
+	display: flex;
+    margin-top: auto;
+    flex-direction: column;
+    padding: 0 15px;
 }
 .ingPridImg{
 	text-align: center;
@@ -137,18 +143,19 @@
 	border:1px solid #CFCFCF;
 	box-shadow: 0 0 8px #ACACAC;
 }
-.legendSelect{
+.legendWram h4{
+	line-height: 49px;
 	display: block;
     width: 100%;
-	background-color: #EBEBEB;
-	padding: 0 20px;
+	padding: 5px 20px;
 	height: 68px;
-	color: #B11116;
+	color: #000;
 	font-size: 40px;
 	font-weight: bold;
 	appearance:none;
-	background: url('../img/selectDown.gif') no-repeat 99% 50%;
 	box-shadow: 0 0 8px #ACACAC;
+	cursor:pointer;
+	background: #fff;
 }
 .legendWram{
 	margin-bottom: 36px;
@@ -194,7 +201,9 @@
 	text-transform: uppercase;
 	border:1px solid #CFCFCF;
 	box-shadow: 0 0 8px #ACACAC;
-}
+	cursor:pointer;
+	background: url('../img/selectDown.gif') no-repeat 99% 50%;
+}	
 .wrapAnalogSelect{
 	margin-bottom: 44px;
 }
@@ -218,9 +227,73 @@ ul.ulList{
     font-size: 40px;
     font-family: $PT-regular;
     font-weight: normal;
+    li{
+    	margin-bottom: 15px;
+    }
 }
 .Wraplist{
 	padding-left: 70px;
 	margin-bottom: 300px;
 }
 ///////////////////end tabs three blocks
+@media(max-width: 991px){
+	.legendWram h4{
+		font-size: 26px;
+		height: 40px;
+		line-height: 29px;
+	}
+	.legendWram,.tableWrapLegend{margin-left: 0;}
+	.backTo a{
+		font-size: 26px;
+		padding: 10px 18px;
+	}
+	.tab button{
+		font-size: 26px;
+		padding: 10px 0;
+	}
+	.infSises,.infoAboutProduct p,
+	.sisesOfProduct,.modelCar,.legendSelect,
+	.modelCarBottom,.analogSelect,
+	ul.ulList {font-size: 26px;}
+	.tableKartka{font-size: 18px;}
+	.analogSelect,.legendSelect{height: 40px;}
+	.Wraplist{padding-left: 10px;}
+	.modelCar,.modelCarBottom{padding: 10px 0 10px 20px;}
+}//end media
+@media(max-width: 768px){
+	.tab{flex-wrap: wrap;}
+	.tab button{
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		float: none;
+	}
+	.tableWrapLegend{margin-left: 0;}
+	.legendWram{margin-left: 0;}
+	.wrapTabContent{flex-wrap: wrap;}
+	.infoAboutProduct{max-width: 100%;}
+	.infSises{
+		text-indent: 0;
+		text-align: center;
+	}
+	tr.headerTable th{
+		font-size: 15px;
+		padding: 0 4px;
+	}
+	.backTo a {
+    font-size: 16px;
+    padding: 6px 12px;
+}
+
+}//end media
+@media(max-width: 991px){}//end media
+.tableWrapLegend{display: none;}
+.activePreTitleAcordion{
+	display: block;
+}
+.activeTexcAcordion{
+display: block;
+}
+.hideBlock{
+	display: none;
+}

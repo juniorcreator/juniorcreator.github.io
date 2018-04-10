@@ -1,8 +1,12 @@
 @import "style.scss";
-
+html{overflow-x: hidden;}
+.headerNews h1{background-color: transparent;}
+.imgAbout{
+	float: left;
+	margin-right: 20px;
+}
 .wrapHeaderPageAboutCompany{
 	margin-bottom: 44px;
-	background: rgba(252, 252, 252, 0.8);
 }
 .topmenuAndroid ul li .activeLink{
 	background-color: #AF0917;
@@ -67,3 +71,26 @@
   filter: gray; /* IE 6-9 */
   transition:all 0.3s;
 }
+@media(max-width:1400px){
+	.wparImgFigure p {
+		font-size: 30px;
+		margin-top: 15px;
+	}
+	.wparImgFigure h3{font-size: 35px;}
+	}//end 1199px
+@media(max-width:1199px){
+	.wparImgFigure figcaption{
+		padding: 10px 20px;
+	}
+	.wparImgFigure h3{font-size: 20px;}
+	.wparImgFigure p{font-size: 16px; margin-top: 6px;}
+}//end 1199px
+@media(max-width:991px){
+	.imgInnerWhyWe,.imgInnerWhyWe,.imgInnerWhyWe{
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.textAbout p{font-size: 19px;}
+	.textAbout h3{font-size: 40px;}
+}//end 991px
+@media(max-width:560px){}//end 560px

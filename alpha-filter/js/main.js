@@ -3,7 +3,7 @@ $(document).ready(function() {
  
   $('#mainCarousel').owlCarousel({
     loop:true,
-    margin:10,
+    margin:0,
     nav:false,
     dots:true,
     autoplay:true,
@@ -65,18 +65,11 @@ $('.ourHistoryP').slideUp();
 
 //////// END Страница о компании три блока снизу
 /////// Vertical carousel news
-$(".verticalCarousel").verticalCarousel({
 
-  // current item to display on start
-  currentItem: 1,
-
-  // number of items to display at a time
-  showItems: 4,
-  
-});
 /////// END Vertical carousel news
+//по клику показывает топ меню
 
-
+// END по клику показывает топ меню
 
 });//End Jquery
 
@@ -139,3 +132,38 @@ var defaultOpen = document.getElementsByClassName('defaulfOpen')[0];
 defaultOpen.click();
 
 // ENDkartka of goods tabs 
+//menu mobile
+function myFunctionMenu(x) {
+    x.classList.toggle("change");
+}
+///menu mobile
+//для меню 
+function funcHideShow(){
+   /*if($('.topmenuAndroid').hasClass('hiddenMenu')){
+    $('.topmenuAndroid').removeClass('hiddenMenu');
+   }else {
+     $('.topmenuAndroid').addClass('hiddenMenu');  
+   } */
+   $('.topmenuAndroid nav ul').slideToggle('slow');
+};
+// для меню
+////////// Для акардиона
+$(document).ready(function() {
+  //прикрепляем клик по заголовкам acc-head
+    $('.acc-head').on('click', f_acc);
+    $('.modelCarBottom').on('click', f_acc2);
+});
+ 
+function f_acc(){
+//скрываем все кроме того, что должны открыть
+  $('.acc-body').not($(this).next()).slideUp(300);
+// открываем или скрываем блок под заголовком, по которому кликнули
+    $(this).next().slideToggle(500);
+}
+function f_acc2(){
+//скрываем все кроме того, что должны открыть
+  $('.legendWram').not($(this).next()).slideUp(300);
+// открываем или скрываем блок под заголовком, по которому кликнули
+    $(this).next().slideToggle(500);
+}
+//// Для акардиона
