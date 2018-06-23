@@ -1,0 +1,266 @@
+@import "reset";
+@import "variables";
+@import "fonts";
+// font-family: "SourceSansPro-Semibold";
+// font-family: "MyriadPro-Regular";
+
+ *{
+	box-sizing: border-box;
+	font-family: "MyriadPro-Regular";
+	font-size: 16px;
+ }
+ a, a:active, a:hover{
+	text-decoration: none;
+	display: inline-block;
+	font-family: "SourceSansPro-Semibold";
+	color: $paragraphColor;
+
+ }
+ img {
+	max-width: 100%;
+	
+ }
+ p, h1{
+ 	font-family: "MyriadPro-Regular";
+ }
+ p {line-height: 20px;}
+
+
+ .row_container{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+ }
+ .mainWrapper{
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+ }
+ //header
+ .hide_lg{display: none;}
+.header{
+	padding-top: 109px;
+	h1{
+		font-size: 35px;
+		text-transform: uppercase;
+		color: $headingColor;
+		margin-bottom: 27px;
+		text-align: center;
+	}
+	&_logo{
+		margin-bottom: 44px;
+	}
+}
+.hide_lg{display: none;}
+.headerRight{
+	max-width: 293px;
+	width: 100%;
+	margin: 71px 70px 0 auto;
+	height: 471px;
+	border: 1px solid $borderColor;
+	position: relative;
+	&_maket{
+		top: -15px;
+		right: 124px;
+		position: absolute;
+		img{
+			max-width: 360px;
+		}
+
+	}
+	&_shoes{
+		position: absolute;
+		bottom: -25px;
+		right: -68px;
+	}
+}
+.readAll{
+	margin-top: -36px;
+	&_img{
+		margin-bottom: 101px;
+		img{
+			max-width: 375px;
+		}
+	}
+	&_link{
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		a{
+			margin-right: 105px;
+			text-transform: uppercase;
+			position: relative;
+			transition: all .4s;
+			backface-visibility: hidden;
+			&:after{
+				position: absolute;
+				content: "";
+				height: 1px;
+				width: 100%;
+				bottom: -10px;
+				left: 0;
+				background-color: #000;
+			}
+			&:hover{
+				transform: scale(1.1);
+			}
+			&:active{
+				transform: scale(.96);
+			}
+		}
+		img{
+			display: inline-block;
+			margin-right: -20px;
+		}
+	}
+}
+.show_sm{display: none;}
+.rightText{
+	margin-top: 62px;
+}
+.footer{padding-bottom: 159px;}
+.nowrap_flex{
+			flex-wrap: wrap;
+		}
+
+//media requests
+@media(max-width: 1150px){
+	.headerRight{
+		height: 400px;
+		&_maket{
+			width: 100%;
+			img{
+				max-width: 100%;
+			}
+		}
+	}
+	.readAll{
+		margin-top: 0;
+		.readAll_img{
+			margin-bottom: 60px;
+		img{
+			max-width: 100%;
+		}
+	}
+	&_link a{
+		margin-right: 50px;
+	}
+	}
+	.woomanImg{
+		margin-top: 36px;
+	}
+	.rightText{margin-top: 62px;}
+	
+
+
+
+}// media 1150px
+@media(max-width: 1020px){
+	.headerRight{
+		height: 250px;
+		max-width: 213px;
+		&_maket{
+			width: 93%;
+			top: -20px;
+			right: 75px;
+		}
+		&_shoes{
+		width: 60%;
+		bottom: -25px;
+		right: -69px;
+	}
+	}
+	&_maket{
+		right: 75px;
+	}
+	
+	.header{
+		padding-top: 90px;
+		text-align: center;
+		h1{
+			font-size: 26px;
+		}
+		img{
+			max-width: 80%;
+		}
+		&_logo{margin-bottom: 25px;}
+
+	}
+	header{
+		margin-bottom: 20px;
+	}
+	.readAll .readAll_img{
+		margin-bottom: 40px;
+	}
+}
+
+@media(max-width: 767px){
+
+		.leftImg{padding-right: 0;}
+		.show_sm{display: block;}
+		.rightText{margin-top: 30px;}
+		.hide_sm{display: none;}
+		.nowrap_flex{
+			flex-wrap: nowrap;
+		}
+		.header{
+			padding-top: 30px;
+		}
+		.headerRight{
+			    margin: 60px auto 20px auto;
+			    max-width: 250px;
+			    height: 300px;
+			&_maket{
+				width: 92%;
+			    top: -12px;
+			    right: 91px;
+			}
+			&_shoes{
+				width: 56%;
+			    bottom: -25px;
+			    right: -62px;
+			}
+		}
+		.hide_sm{display: none;}
+		.hide_lg{
+			display: block;
+			padding-top: 15px;
+		}
+		.woomanImg{margin-top: 0;}	
+		.show_sm {
+		    display: flex;
+		    justify-content: center;
+		    margin-top: 40px;
+		}
+
+	}//media 767px 
+@media(max-width: 450px){
+	.header{
+		h1{
+			font-size: 24px;
+		}
+	}
+	.headerRight{
+		margin: 28px auto 20px auto;
+    	max-width: 150px;
+    	height: 178px;
+
+    	&_maket{
+    		width: 100%;
+		    top: -29px;
+		    right: 54px;
+    	}
+    	&_shoes{
+    		width: 68%;
+		    bottom: -25px;
+		    right: -59px;
+    	}
+	}
+	.hide_lg{
+		padding-top: 15px;
+	}
+
+
+
+	}// media 450px
