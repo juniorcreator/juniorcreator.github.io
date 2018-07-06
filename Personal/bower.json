@@ -1,0 +1,26 @@
+{
+  "name": "optimizedhtml",
+  "description": "OptimizedHTML 4 - Start HTML Template",
+  "main": "index.js",
+  "authors": [
+    "WebDesign Master"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  },
+  "devDependencies": {
+    "bootstrap": "^4.1.1",
+    "jquery": "^3.3.1",
+    "components-font-awesome": "^5.0.6"
+  }
+}
